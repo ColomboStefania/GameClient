@@ -1,4 +1,22 @@
-.board-tile {
+.playerDefault {
+  height: 50px;
+  width: 50px;
+  background-image: url('./grass.jpg')
+}
+.playerX {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+}
+.playerO {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  background-image: url('./marioM.jpeg');
+  color: transparent;
+}
+.new {
+  background-color: yellow;
   height: 50px;
   width: 50px;
 }
