@@ -31,7 +31,7 @@ class GamesList extends PureComponent {
           }
         </Typography>
         <Typography variant="headline" component="h2">
-          Game #{game.id}
+          New Game {game.id}
         </Typography>
         <Typography color="textSecondary">
           Status: {game.status}

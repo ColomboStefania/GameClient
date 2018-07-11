@@ -4,9 +4,10 @@
   background-image: url('./grass.jpg')
 }
 .playerX {
-  background-color: red;
+  
   height: 50px;
   width: 50px;
+  background-image: url('./Mario.png')
 }
 .playerO {
   background-color: blue;
