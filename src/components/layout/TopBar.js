@@ -6,6 +6,7 @@ import Button from 'material-ui/Button'
 import {withRouter} from 'react-router'
 import {userId} from '../../jwt'
 import {connect} from 'react-redux'
+
 import AccountIcon from 'material-ui-icons/AccountBox'
 
 const TopBar = (props) => {
@@ -15,7 +16,6 @@ const TopBar = (props) => {
     <AppBar position="absolute" style={{zIndex:10}}>
       <Toolbar>
         <Typography variant="title" color="inherit" style={{flex: 1}}>
-          Multiplayer Tic Tac Toe
         </Typography>
         {
           user &&

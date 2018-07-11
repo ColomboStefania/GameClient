@@ -5,6 +5,7 @@ import SignupPage from './components/signup/SignupPage'
 import GamesList from './components/games/GamesList'
 import GameDetails from './components/games/GameDetails'
 import LogoutPage from './components/logout/LogoutPage'
+import HomePage from './components/games/HomePage'
 import './App.css'
 import TopBar from './components/layout/TopBar'
 
@@ -21,6 +22,7 @@ class App extends Component {
             <TopBar />
           </nav>
           <main style={{marginTop:75}}>
+            <Route exact path="/home" component={HomePage} />   
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/logout" component={LogoutPage} />
             <Route exact path="/signup" component={SignupPage} />
