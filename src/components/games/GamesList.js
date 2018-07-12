@@ -9,6 +9,7 @@ import Card, { CardActions, CardContent } from 'material-ui/Card'
 import Typography from 'material-ui/Typography'
 import './GamesList.css'
 
+
 class GamesList extends PureComponent {
   componentWillMount() {
     if (this.props.authenticated) {
@@ -49,6 +50,9 @@ class GamesList extends PureComponent {
   }
 
   render() {
+
+    
+      
     const {games, users, authenticated, createGame} = this.props
 
     if (!authenticated) return (
