@@ -6,7 +6,7 @@
 }
 
 .ScoreBoard {
-  width: 140px;
+  width: 120px;
   height: auto;
   background-color: rgb(255, 60, 0);
   padding-left: 60px;
@@ -62,5 +62,5 @@
 }
 
 .scoreText {
-  font-size: 25px;
+  font-size: 20px;
 }
