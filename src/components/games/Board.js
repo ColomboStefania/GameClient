@@ -15,9 +15,9 @@ const renderCel = (makeMove, rowIndex, cellIndex, symbol, hasTurn) => {
   } else if (symbol === 'x' && cellIndex === 0 && rowIndex === 8) {
     colorChange = 'mediummushroom'
   } else if (symbol === 'o' && cellIndex === 2 && rowIndex === 9) {
-    colorChange = 'smallmushroom'
+    colorChange = 'mediummushroom'
   } else if (symbol === 'x' && cellIndex === 2 && rowIndex === 9) {
-    colorChange = 'smallmushroom'
+    colorChange = 'mediummushroom'
   } else if (symbol === 'o' && cellIndex === 3 && rowIndex === 5) {
     colorChange = 'smallmushroom'
   } else if (symbol === 'x' && cellIndex === 3 && rowIndex === 5) {

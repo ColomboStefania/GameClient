@@ -8,6 +8,7 @@ import LogoutPage from './components/logout/LogoutPage'
 import HomePage from './components/games/HomePage'
 import './App.css'
 import TopBar from './components/layout/TopBar'
+import Rules from './components/games/Rules'
 
 // <Route exact path="/signup" component={SignupPage} />
 // <Route exact path="/games" component={GamesList} />
@@ -23,6 +24,7 @@ class App extends Component {
           </nav>
           <main style={{marginTop:75}}>
             <Route exact path="/home" component={HomePage} />   
+            <Route exact path="/rules" component={Rules} />
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/logout" component={LogoutPage} />
             <Route exact path="/signup" component={SignupPage} />
