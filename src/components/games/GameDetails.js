@@ -96,7 +96,7 @@ class GameDetails extends PureComponent {
       } 
 
        { game.score !== null && game.score.filter(item => item === "o").length >= 10 &&
-      <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100"  />
+      <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100"  className = "trophy"/>
       }
 
        { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
