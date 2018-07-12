@@ -1,23 +1,38 @@
 .playerDefault {
   height: 50px;
   width: 50px;
-  background-image: url('./grass.jpg')
+  background-image: url('./grass.jpg');
+  color: transparent;
 }
 .playerX {
-  
   height: 50px;
   width: 50px;
-  background-image: url('./mariosmall.png')
+  background-image: url('./mariosmall.png');
+  color: transparent;
 }
 .playerO {
-  background-color: blue;
   height: 50px;
   width: 50px;
   background-image: url('./luigi.png');
   color: transparent;
 }
-.new {
-  background-image: url('./red-mashroom.png');
+.smallmushroom {
+  background-image: url('./blue-mushroom.png');
   height: 50px;
   width: 50px;
+  color: transparent;
+}
+
+.mediummushroom {
+  background-image: url('./red-white-mashroom.png');
+  height: 50px;
+  width: 50px;
+  color: transparent;
+}
+
+.bigmushroom {
+  background-image: url('./golden-mushroom.png');
+  height: 50px;
+  width: 50px;
+  color: transparent;
 }

@@ -6,7 +6,7 @@
 }
 
 .ScoreBoard {
-  width: 100px;
+  width: 140px;
   height: auto;
   background-color: rgb(255, 60, 0);
   padding-left: 60px;
@@ -19,6 +19,7 @@
   display: inline-block;
   margin-left:20px;
   border-radius: 80px;
+  text-align: center;
 }
 
 .moregrass {
@@ -32,6 +33,7 @@
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 4s;
+  text-align: center;
 }
 
 
@@ -57,4 +59,8 @@
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.scoreText {
+  font-size: 25px;
 }

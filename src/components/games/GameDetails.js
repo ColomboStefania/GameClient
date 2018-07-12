@@ -71,16 +71,16 @@ class GameDetails extends PureComponent {
       
       <div className = "ScoreBoard">
 
-      <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100"  align="left" className = "pic"/>
+      <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100" className = "pic"/>
       
 
-      { game.score !== null && game.score.filter(item => item === "o").length >= 4 &&
+      { game.score !== null && game.score.filter(item => item === "x").length >= 12 &&
       <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100" className = "trophy" />
       }
 
       { game.score !== null &&
-         game.score.filter(item => item === "o").length !== null &&
-      <p>Mario score: {game.score.filter(item => item === "o").length} points </p>
+         game.score.filter(item => item === "x").length !== null &&
+      <p className='scoreText'>Mario score: {game.score.filter(item => item === "x").length} points </p>
       } 
 
       {/* {
@@ -90,14 +90,14 @@ class GameDetails extends PureComponent {
       } */}
       </div>
        <div className = "ScoreBoard">
-      <img src="http://cdn8.bigcommerce.com/s-balh3740/images/stencil/608x608/products/9370/2621/luigi__96034__23458.1354626704.jpg?c=2"  width="100" height="100"  align="left" className = "pic"/>
+      <img src="http://cdn8.bigcommerce.com/s-balh3740/images/stencil/608x608/products/9370/2621/luigi__96034__23458.1354626704.jpg?c=2"  width="100" height="100"  className = "pic"/>
      
       { game.score !== null &&
-         game.score.filter(item => item === "x").length !== null &&
-      <p>Luigi score: {game.score.filter(item => item === "x").length} points </p>
+         game.score.filter(item => item === "o").length !== null &&
+      <p className='scoreText'>Luigi score: {game.score.filter(item => item === "o").length} points </p>
       } 
 
-       { game.score !== null && game.score.filter(item => item === "x").length >= 4 &&
+       { game.score !== null && game.score.filter(item => item === "o").length >= 12 &&
       <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100"  />
       }
 
@@ -108,20 +108,52 @@ class GameDetails extends PureComponent {
 
       </div>
 
-      <div className = "ScoreBoard">
+      <div className="ScoreBoard">
 
-      {
-        game.board[1][1] !== null && 
-        <img src="https://vignette.wikia.nocookie.net/mariokart/images/a/a2/Mushroom_-_New_Super_Mario_Bros.png/revision/latest?cb=20170807173145" width="100" height="100"/>
-      }
-      {
-        game.board[1][2] !== null &&
-      <img src="https://vignette.wikia.nocookie.net/mariokart/images/a/a4/GoldenMushroomMK8.png/revision/latest?cb=20140520034127" width="70" height="100"/>
-      } 
-
-     
+          {
+            game.board[8][0] !== null && 
+            <img src="https://vignette.wikia.nocookie.net/mario/images/8/8c/Mushroom.png/revision/latest?cb=20101223220717" width="50" height="50"/>
+          }
+          {
+            game.board[2][2] !== null &&
+            <img src="https://vignette.wikia.nocookie.net/mario/images/8/8c/Mushroom.png/revision/latest?cb=20101223220717" width="50" height="50"/>
+          }
+          {
+            game.board[5][7] !== null &&
+            <img src="https://vignette.wikia.nocookie.net/mario/images/8/8c/Mushroom.png/revision/latest?cb=20101223220717" width="50" height="50"/>
+          }
+          {
+            game.board[1][8] !== null &&
+            <img src="https://vignette.wikia.nocookie.net/mario/images/8/8c/Mushroom.png/revision/latest?cb=20101223220717" width="50" height="50"/>
+          }
+          {
+            game.board[9][2] !== null &&
+            <img src="https://vignette.wikia.nocookie.net/mario/images/8/8c/Mushroom.png/revision/latest?cb=20101223220717" width="50" height="50"/>
+          } 
+          {
+            game.board[5][3] !== null &&
+            <img src="https://www.mariowiki.com/images/thumb/5/57/Powerup-mini-mushroom-sm.png/200px-Powerup-mini-mushroom-sm.png" width="50" height="50"/>
+          }
+          {
+            game.board[3][5] !== null &&
+            <img src="https://vignette.wikia.nocookie.net/mariokart/images/a/a4/GoldenMushroomMK8.png/revision/latest?cb=20140520034127" width="50" height="50"/>
+          }
+          {
+            game.board[7][5] !== null &&
+            <img src="https://www.mariowiki.com/images/thumb/5/57/Powerup-mini-mushroom-sm.png/200px-Powerup-mini-mushroom-sm.png" width="50" height="50"/>
+          } 
+          {
+            game.board[8][8] !== null &&
+            <img src="https://www.mariowiki.com/images/thumb/5/57/Powerup-mini-mushroom-sm.png/200px-Powerup-mini-mushroom-sm.png" width="50" height="50"/>
+          }  
+          {
+            game.board[3][9] !== null &&
+            <img src="https://www.mariowiki.com/images/thumb/5/57/Powerup-mini-mushroom-sm.png/200px-Powerup-mini-mushroom-sm.png" width="50" height="50"/>
+          } 
 
       </div>
+
+
       {
         game.status === 'started' &&
         player && player.symbol === game.turn &&
