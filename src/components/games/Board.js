@@ -46,6 +46,14 @@ const renderCel = (makeMove, rowIndex, cellIndex, symbol, hasTurn) => {
     colorChange = 'smallmushroom'
   } else if (symbol === 'x' && cellIndex === 9 && rowIndex === 3) {
     colorChange = 'smallmushroom'
+  } else if (symbol === 'x' && cellIndex === 9 && rowIndex === 9) {
+    colorChange = 'poison'
+  } else if (symbol === 'o' && cellIndex === 9 && rowIndex === 9) {
+    colorChange = 'poison'
+  } else if (symbol === 'x' && cellIndex === 0 && rowIndex === 9) {
+    colorChange = 'poison'
+  } else if (symbol === 'o' && cellIndex === 0 && rowIndex === 9) {
+    colorChange = 'poison'
   } else if (symbol === 'o') {
     colorChange = "playerO"
   } else if (symbol === 'x') {
