@@ -4,3 +4,29 @@
   padding: 20px;
   width: 60%;
 }
+
+.ScoreBoard {
+  width: 100px;
+  height: auto;
+  background-color: rgb(255, 60, 0);
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  display: inline-block;
+  margin-left:20px;
+  border-radius: 80px;
+}
+
+.moregrass {
+  margin-left: 120px;
+}
+
+.pic{
+  border-radius: 70px;
+  margin-bottom: 20px;
+}
+

@@ -49,11 +49,68 @@ class GameDetails extends PureComponent {
       .filter(p => p.symbol === game.winner)
       .map(p => p.userId)[0]
 
-    return (<Paper className="outer-paper">
-      <h1>Game #{game.id}</h1>
+  
+
+ 
+
+    return (
+    
+      
+    
+    <Paper className="outer-paper">
+      {/* <h1>Game {game.id}</h1> */}
 
       <p>Status: {game.status}</p>
+      
+      <div className = "ScoreBoard">
+  
+      <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100"  align="left" className = "pic"/>
 
+      { game.score !== null &&
+         game.score.filter(item => item === "o").length !== null &&
+      <p>Mario score: {game.score.filter(item => item === "o").length} points </p>
+      } 
+
+      {/* {
+        game.status === "started" && audio.play() &&
+        <audio ref="audio_tag" src="marioaudio.mp3" controls autoPlay/>
+      } */}
+
+      {/* {
+         game.score.filter(item => item === "x").length &&
+        <p>Mario score: {game.score.filter(item => item === "x").length} point </p>
+      
+      } */}
+      </div>
+       <div className = "ScoreBoard">
+      <img src="http://cdn8.bigcommerce.com/s-balh3740/images/stencil/608x608/products/9370/2621/luigi__96034__23458.1354626704.jpg?c=2"  width="100" height="100"  align="left" className = "pic"/>
+
+      { game.score !== null &&
+         game.score.filter(item => item === "x").length !== null &&
+      <p>Luigi score: {game.score.filter(item => item === "x").length} points </p>
+      } 
+
+      {/* {
+         game.score.filter(item => item === "x").length &&
+      <p>Luigi score: {game.score.filter(item => item === "x").length} point </p>
+      } */} 
+
+      </div>
+
+          <div className = "ScoreBoard">
+
+      {
+        game.board[1][1] !== null && 
+        <img src="https://vignette.wikia.nocookie.net/mariokart/images/a/a2/Mushroom_-_New_Super_Mario_Bros.png/revision/latest?cb=20170807173145" width="100" height="100"/>
+      }
+      {
+        game.board[1][2] !== null &&
+      <img src="https://vignette.wikia.nocookie.net/mariokart/images/a/a4/GoldenMushroomMK8.png/revision/latest?cb=20140520034127" width="70" height="100"/>
+      } 
+
+     
+
+      </div>
       {
         game.status === 'started' &&
         player && player.symbol === game.turn &&
@@ -63,7 +120,7 @@ class GameDetails extends PureComponent {
       {
         game.status === 'pending' &&
         game.players.map(p => p.userId).indexOf(userId) === -1 &&
-        <button onClick={this.joinGame}>Join Game</button>
+        <button  onClick={this.joinGame} >Join Game</button>
       }
 
       {
@@ -75,7 +132,9 @@ class GameDetails extends PureComponent {
 
       {
         game.status !== 'pending' &&
+        <div className = "moregrass">
         <Board board={game.board} makeMove={this.makeMove} />
+        </div>
       }
     </Paper>)
   }

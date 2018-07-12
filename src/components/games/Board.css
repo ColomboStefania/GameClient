@@ -7,17 +7,17 @@
   
   height: 50px;
   width: 50px;
-  background-image: url('./Mario.png')
+  background-image: url('./mariosmall.png')
 }
 .playerO {
   background-color: blue;
   height: 50px;
   width: 50px;
-  background-image: url('./marioM.jpeg');
+  background-image: url('./luigi.png');
   color: transparent;
 }
 .new {
-  background-color: yellow;
+  background-image: url('./red-mashroom.png');
   height: 50px;
   width: 50px;
 }
