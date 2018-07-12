@@ -8,6 +8,7 @@ import Paper from 'material-ui/Paper'
 import Board from './Board'
 import './GameDetails.css'
 
+
 class GameDetails extends PureComponent {
 
   componentWillMount() {
@@ -51,6 +52,7 @@ class GameDetails extends PureComponent {
 
     return (<Paper className="outer-paper">
       <h1>Game {game.id}</h1>
+    
 
       <p>Status: {game.status}</p>
      
