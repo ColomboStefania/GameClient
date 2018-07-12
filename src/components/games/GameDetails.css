@@ -37,6 +37,7 @@
   margin-left:20px;
   border-radius: 80px;
   text-align: center;
+
 }
 
 .moregrass {
@@ -51,8 +52,20 @@
   animation-name: example;
   animation-duration: 4s;
   text-align: center;
+
 }
 
+
+.fallingpic{
+  border-radius: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-iteration-count: 9;
+}
 
 
 .trophy {
@@ -88,3 +101,8 @@ audio {
     margin-left: auto;
     margin-right: auto;
  }
+
+ @keyframes mymove {
+  from {top: 0px;}
+  to {top: 1000px;}
+}
