@@ -29,8 +29,8 @@ export default class Rules extends PureComponent {
         <h2 className = "rulestitle">Gold Mushroom 4 Points</h2>
          </div>
          <div className = "rulecontainer">
-        <img src="https://vignette.wikia.nocookie.net/nintendo/images/1/12/1upshroom.png/revision/latest?cb=20160922033647&path-prefix=en"  width="100" height="100" className ="rulesImage"/>
-        <img src="https://vignette.wikia.nocookie.net/nintendo/images/1/12/1upshroom.png/revision/latest?cb=20160922033647&path-prefix=en"  width="100" height="100" className ="rulesImage"/>
+        <img src="http://oyster.ignimgs.com/mediawiki/apis.ign.com/super-mario-3d-land/thumb/f/f1/PoisonMushroom.png/228px-PoisonMushroom.png"  width="100" height="100" className ="rulesImage"/>
+        <img src="http://oyster.ignimgs.com/mediawiki/apis.ign.com/super-mario-3d-land/thumb/f/f1/PoisonMushroom.png/228px-PoisonMushroom.png"  width="100" height="100" className ="rulesImage"/>
         <h2 className = "rulestitle">Poisoned Mushroom -1 Point</h2>
          </div>
          <div className = "rulecontainer">

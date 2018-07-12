@@ -59,7 +59,7 @@ class GameDetails extends PureComponent {
         <source src="http://66.90.93.122/ost/super-mario-bros.-1-3-anthology/gczrgwrx/1%2001%20Main%20Theme%20Overworld.mp3" type="audio/mpeg"/>
       </audio></div>
 
-      <p>Status: {game.status}</p>
+     
      
 
       <div className = 'mario'>
