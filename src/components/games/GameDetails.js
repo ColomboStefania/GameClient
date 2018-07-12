@@ -55,11 +55,12 @@ class GameDetails extends PureComponent {
       
 
     <Paper className="outer-paper">
+      <div>   <audio  controls autoplay className = "audio">
+        <source src="http://66.90.93.122/ost/super-mario-bros.-1-3-anthology/gczrgwrx/1%2001%20Main%20Theme%20Overworld.mp3" type="audio/mpeg"/>
+      </audio></div>
 
       <p>Status: {game.status}</p>
-      <audio controls autoplay>
-        <source src="http://66.90.93.122/ost/super-mario-bros.-1-3-anthology/gczrgwrx/1%2001%20Main%20Theme%20Overworld.mp3" type="audio/mpeg"/>
-      </audio>
+     
 
       <div className = 'mario'>
           <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100" className = "pic"/>
