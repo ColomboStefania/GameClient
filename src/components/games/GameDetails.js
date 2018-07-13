@@ -56,7 +56,7 @@ class GameDetails extends PureComponent {
 
     <Paper className="outer-paper">
    
-         { game.score !== null  && game.score.filter(item => item === "x").length < 10 && game.score.filter(item => item === "o").length < 10 &&
+         { game.score !== null  && game.score.filter(item => item === "x").length < 7 && game.score.filter(item => item === "o").length < 7 &&
           <audio  controls autoplay >
           <source src="http://66.90.93.122/ost/super-mario-bros/lpuutfcy/06%20-%20Underground.mp3" type="audio/mpeg"/>
           </audio>
@@ -64,15 +64,15 @@ class GameDetails extends PureComponent {
      
       <div className = 'mario'>
           { game.score !== null &&
-           game.score.filter(item => item === "o").length < 10 && 
+           game.score.filter(item => item === "o").length < 7 && 
           <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100" className = "pic"/>
           }
 
-          { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
+          { game.score !== null && game.score.filter(item => item === "x").length >= 7 &&
           <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100" className = "trophy" />
           }
 
-          { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
+          { game.score !== null && game.score.filter(item => item === "x").length >= 7 &&
           <audio  autoPlay loop >
           <source src="http://66.90.93.122/ost/super-mario-bros/ywaefvsa/18%20-%20Game%20Over%20%28alternate%29.mp3" type="audio/mpeg"/>
           </audio>
@@ -85,7 +85,7 @@ class GameDetails extends PureComponent {
           <p className='scoreText'>Mario score: {game.score.filter(item => item === "x").length} points </p>
           } 
 
-           { game.score !== null && game.score.filter(item => item === "o").length >= 10 &&
+           { game.score !== null && game.score.filter(item => item === "o").length >= 7 &&
           <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100" className = "fallingpic" />
           }
       </div>
@@ -93,7 +93,7 @@ class GameDetails extends PureComponent {
       <div className = "ScoreBoard">
 
         { game.score !== null &&
-          game.score.filter(item => item === "x").length < 10 &&
+          game.score.filter(item => item === "x").length < 7 &&
           <img src="http://cdn8.bigcommerce.com/s-balh3740/images/stencil/608x608/products/9370/2621/luigi__96034__23458.1354626704.jpg?c=2"  width="100" height="100"  className = "pic"/>
         } 
      
@@ -108,17 +108,17 @@ class GameDetails extends PureComponent {
           </audio>
           } */}
 
-          { game.score !== null && game.score.filter(item => item === "o").length >= 10 &&
+          { game.score !== null && game.score.filter(item => item === "o").length >= 7 &&
           <audio  autoPlay loop >
           <source src="http://66.90.93.122/ost/super-mario-bros/ywaefvsa/18%20-%20Game%20Over%20%28alternate%29.mp3" type="audio/mpeg"/>
           </audio>
           }
 
-        { game.score !== null && game.score.filter(item => item === "o").length >= 10 &&
+        { game.score !== null && game.score.filter(item => item === "o").length >= 7 &&
         <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100"  className = "trophy"/>
         }
 
-        { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
+        { game.score !== null && game.score.filter(item => item === "x").length >= 7 &&
         <img src="http://cdn8.bigcommerce.com/s-balh3740/images/stencil/608x608/products/9370/2621/luigi__96034__23458.1354626704.jpg?c=2"  width="100" height="100" className = "fallingpic" />
         }
 
