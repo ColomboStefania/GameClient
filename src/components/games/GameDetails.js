@@ -55,10 +55,10 @@ class GameDetails extends PureComponent {
       
 
     <Paper className="outer-paper">
-      <div>   <audio  autoPlay loop >
+      {/* <div>   <audio  autoPlay loop >
         <source src="http://66.90.93.122/ost/super-mario-bros.-1-3-anthology/gczrgwrx/1%2001%20Main%20Theme%20Overworld.mp3" type="audio/mpeg"/>
       </audio>
-      </div>
+      </div> */}
 
      
       <div className = 'mario'>
@@ -69,6 +69,12 @@ class GameDetails extends PureComponent {
 
           { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
           <img src="https://png.pngtree.com/element_origin_min_pic/17/07/23/473f204a1589862d0264b14f926b4b59.jpg"  width="100" height="100" className = "trophy" />
+          }
+
+          { game.score !== null && game.score.filter(item => item === "x").length >= 10 &&
+          <audio  autoPlay loop >
+          <source src="http://66.90.93.122/ost/super-mario-bros.-1-3-anthology/gczrgwrx/1%2001%20Main%20Theme%20Overworld.mp3" type="audio/mpeg"/>
+          </audio>
           }
 
           { game.score !== null &&
