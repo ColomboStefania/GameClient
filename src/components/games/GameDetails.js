@@ -78,7 +78,7 @@ class GameDetails extends PureComponent {
           }
 
             { game.score !== null  && game.score.filter(item => item === "x").length < 10 && game.score.filter(item => item === "o").length < 10 &&
-          <audio  autoPlay >
+          <audio  controls autoplay >
           <source src="http://66.90.93.122/ost/super-mario-bros/lpuutfcy/06%20-%20Underground.mp3" type="audio/mpeg"/>
           </audio>
           }
