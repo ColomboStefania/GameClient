@@ -3,6 +3,7 @@
   margin: auto;
   padding: 20px;
   width: 60%;
+  text-align: center;
 }
 
 .ScoreBoard {
@@ -38,10 +39,6 @@
   border-radius: 80px;
   text-align: center;
 
-}
-
-.moregrass {
-  margin-left: 120px;
 }
 
 .pic{
