@@ -63,7 +63,7 @@ class GameDetails extends PureComponent {
      
       <div className = 'mario'>
           { game.score !== null &&
-           game.score.filter(item => item === "o").length < 10 &&
+           game.score.filter(item => item === "o").length < 10 && game.score.filter(item => item === "x").length < 10 &&
           <img src="https://i.pinimg.com/736x/2b/6b/cf/2b6bcf45c8a270d3563dc596bd6ba926--mario-birthday-party-birthday-games.jpg"  width="100" height="100" className = "pic"/>
           }
 
@@ -105,11 +105,11 @@ class GameDetails extends PureComponent {
         <p className='scoreText'>Luigi score: {game.score.filter(item => item === "o").length} points </p>
         } 
 
-          { game.score !== null  && game.score.filter(item => item === "o").length < 10 &&
+          {/* { game.score !== null  && game.score.filter(item => item === "o").length < 10 &&
           <audio  autoPlay loop >
           <source src="http://66.90.93.122/ost/super-mario-bros/lpuutfcy/06%20-%20Underground.mp3" type="audio/mpeg"/>
           </audio>
-          }
+          } */}
 
           { game.score !== null && game.score.filter(item => item === "o").length >= 10 &&
           <audio  autoPlay loop >
